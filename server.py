@@ -1,6 +1,6 @@
 import socket
 
-PASSWORD = "melike1938sena"  # Change this to the same password as in the client
+PASSWORD = "Strong password"  # Change this to the same password as in the client
 
 s = socket.socket()
 host = "0.0.0.0"  # Listen on all interfaces
