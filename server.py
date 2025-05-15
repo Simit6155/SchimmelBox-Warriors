@@ -1,10 +1,11 @@
 import socket
 
-PASSWORD = "Strong password"  # Change this to the same password as in the client
+password = input("Give the same password as the client pc (only letters): ")
+PASSWORD = password  # Change this to the same password as in the client
 
 s = socket.socket()
 host = "0.0.0.0"  # Listen on all interfaces
-port = 9998
+port = 4444
 
 s.bind((host, port))
 s.listen(1)
